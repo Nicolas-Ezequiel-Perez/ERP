@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div>
+        <label>SKU</label>
+        <input type="text" id="fieldSKU" name="fieldSKU" maxlength="20">
+    </div>
+    <div>
+        <label>Nombre</label>
+        <input type="text" id="fieldNombre" name="fieldNombre" maxlength="100">
+    </div>
+    <div>
+        <label>Precio</label>
+        <input type="number" step="0.01" id="fieldPrecio" name="fieldPrecio" max="99999999">
+        <label id="textoPrecioPack" style="visibility: hidden;">El precio del pack se calcula con el producto de referencia</label>
+    </div>
+    <div>
+        <label>Modelo</label>
+        <select id="selectModelo"></select>
+    </div>
+    <div>
+        <label>Medida</label>
+        <select id="selectMedida" disabled>
+            <option>-- seleccionar modelo --</option>
+        </select>
+    </div>
+    <div>
+        <label>Color</label>
+        <select id="selectColor" disabled>
+            <option>-- seleccionar modelo --</option>
+        </select>
+    </div>
+    <div>
+        <label>Es pack</label>
+        <input type="checkbox" id="checkEsPack">
+        <label>Unidades</label>
+        <input type="number" step="1" id="fieldUnidades" disabled>
+    </div>
+    <div>
+        <label>Producto de referencia</label>
+        <input type="text" id="buscadorReferencia" disabled>
+        <select id="selectReferencia" disabled>
+            <option>-- seleccionar "es pack" para habilitar --</option>
+        </select>
+    </div>
+    <div>
+        <button id="botonCargar">Cargar producto</button>
+        <a href="../principal/index.html">
+            <button>Volver atras</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

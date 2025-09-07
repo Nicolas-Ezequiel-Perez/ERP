@@ -1,0 +1,17 @@
+{
+  "name": "gdiseno",
+  "version": "1.0.0",
+  "description": "Base de datos de inventario de productos y clientes",
+  "license": "ISC",
+  "author": "Nicolas Perez",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mariadb": "^3.4.5"
+  }
+}
